@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/mag"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/magnitude_circle"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        tools:text="6.3" />
+
+    <LinearLayout
+        android:id="@+id/earthquakeLocLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/offsetLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-medium"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:textColor="@color/earthquakedetailsColor"
+            android:textSize="12sp"
+            tools:text="50km nne of" />
+
+        <TextView
+            android:id="@+id/primaryLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/earthquakeLocColor"
+            android:textSize="16sp"
+            tools:text="Al Hoceima, Morocco" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/earthquakedetailsColor"
+            tools:text="date" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:textSize="12sp"
+            android:textColor="@color/earthquakedetailsColor"
+            tools:text="time" />
+    </LinearLayout>
+
+</LinearLayout>
